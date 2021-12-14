@@ -4,10 +4,10 @@ export default links => html`
   <nav>
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
-      <li><a href="Home.js">Home</a></li>
-      <li><a href="Bio.js">Bio</a></li>
-      <li><a href="Gallery.js">Gallery</a></li>
-      <li><a href="Register.js">Register</a></li>
+      ${links.map(
+        link =>
+          `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
+      )}
     </ul>
   </nav>
 `;
