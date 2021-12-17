@@ -1,6 +1,11 @@
 body {
   width: 100%;
-  background: grey;
+  background: darkslateblue;
+}
+
+#stlWeather{
+  margin: 1rem;
+  color: blue;
 }
 
 #jumbotron {
@@ -15,13 +20,13 @@ body {
 }
 
 #jumbotron > h2 {
-  color: black;
+  color: white;
   text-align: center;
 }
 
 #jumbotron > a {
   text-decoration: none;
-  background-color: black;
+  background-color: white;
   font-size: 1.5em;
   padding: 1.5rem;
   border-radius: 10px;
@@ -74,12 +79,18 @@ footer {
   margin: 1rem;
 }
 
+#bio > h2 {
+  font-size: xx-large;
+  border: 1px solid red;
+}
+
 #bioFluff > p {
   margin: 1rem;
   font-size: 1.3rem;
 }
 
 #gallery {
+  margin: 1rem;
   border: solid 1px black;
   clear: both;
 }
@@ -112,9 +123,35 @@ footer {
   right: 15px;
 }
 
+#homeButton:hover {
+  border:  3px blue solid;
+}
+
 #homeButton > a {
   text-decoration: none;
   color: red;
+}
+
+#pizzas {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+}
+
+#pizzas tbody {
+  width: 100%;
+}
+
+#pizzas th {
+  text-align: left;
+  font-size: larger;
+  text-decoration-line: underline;
+}
+
+#pizzas td,th {
+  width: 25%;
 }
 
 @media (max-width: 549px) {
